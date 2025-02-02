@@ -1,0 +1,212 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;600;700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Red Hat Text', sans-serif;
+    background-color: hsl(20, 50%, 98%);
+    color: hsl(14, 65%, 9%);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: hsl(14, 86%, 42%);
+    padding: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Menu Grid */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    max-width: 280px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Image Styling */
+.menu-item img {
+    width: 200px;               /* Fixed width */
+    height: 200px;              /* Fixed height */
+    object-fit: cover;          /* Ensures the image is cropped to fit the container */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+    display: inline-flex;
+    align-items: center;
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: hsl(159, 69%, 38%);
+}
+
+.add-to-cart .cart-icon {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+/* Ensure uniform image size across small screens */
+@media (max-width: 375px) {
+    .menu {
+        grid-template-columns: 1fr;
+    }
+    .menu-item img {
+        width: 150px;             /* Adjusted fixed width for smaller screens */
+        height: 150px;            /* Adjusted fixed height for smaller screens */
+    }
+}
+
+/* Cart Section */
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: hsl(7, 20%, 60%);
+    color: white;
+}
+
+footer h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+footer button {
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+footer button:hover {
+    background-color: hsl(159, 69%, 38%);
+}
+
+/* Modal Styling */
+.modal {
+    display: none;               /* Hidden by default */
+    position: fixed;
+    z-index: 1000;               /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;                 /* Full width */
+    height: 100%;                /* Full height */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#order-modal h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#order-modal p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#order-modal button {
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#order-modal button:hover {
+    background-color: hsl(159, 69%, 38%);
+}
+
+/* Hover & Focus States */
+button:hover, 
+.add-to-cart:hover, 
+footer button:hover,
+#order-modal button:hover {
+    background-color: hsl(159, 69%, 38%);
+}
+
+button:focus, 
+.add-to-cart:focus, 
+footer button:focus,
+#order-modal button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(159, 69%, 38%, 0.5);
+}
+
+
+
+
+
+

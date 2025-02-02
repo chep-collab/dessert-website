@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dessert Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>Dessert Menu</h1>
+    </header>
+
+    <main>
+        <section class="menu">
+            <div class="menu-item" data-name="Waffle with Berries" data-price="6.50">
+                <img src="images/waffles.jpg" alt="Waffle with Berries">
+                <h2>Waffle with Berries</h2>
+                <p>Waffle</p>
+                <span>$6.50</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-name="Vanilla Bean Crème Brûlée" data-price="7.00">
+                <img src="images/creme-brulee.jpg" alt="Vanilla Bean Crème Brûlée">
+                <h2>Vanilla Bean Crème Brûlée</h2>
+                <p>Crème Brûlée</p>
+                <span>$7.00</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-name="Macaron Mix of Five" data-price="8.00">
+                <img src="images/Macaron Mix of Five.jpg" alt="Macaron Mix of Five">
+                <h2>Macaron Mix of Five</h2>
+                <p>Macaron</p>
+                <span>$8.00</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-name="Classic Tiramisu" data-price="5.50">
+                <img src="images/tiramisu.jpg" alt="Classic Tiramisu">
+                <h2>Classic Tiramisu</h2>
+                <p>Tiramisu</p>
+                <span>$5.50</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-name="Pistachio Baklava" data-price="4.00">
+                <img src="images/baklava.jpg" alt="Pistachio Baklava">
+                <h2>Pistachio Baklava</h2>
+                <p>Baklava</p>
+                <span>$4.00</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-name="Lemon Meringue Pie" data-price="5.00">
+                <img src="images/lemon-meringue.jpg" alt="Lemon Meringue Pie">
+                <h2>Lemon Meringue Pie</h2>
+                <p>Pie</p>
+                <span>$5.00</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-name="Red Velvet Cake" data-price="4.50">
+                <img src="images/red-velvet.jpg" alt="Red Velvet Cake">
+                <h2>Red Velvet Cake</h2>
+                <p>Cake</p>
+                <span>$4.50</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-name="Salted Caramel Brownie" data-price="4.50">
+                <img src="images/brownie.jpg" alt="Salted Caramel Brownie">
+                <h2>Salted Caramel Brownie</h2>
+                <p>Brownie</p>
+                <span>$4.50</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-name="Vanilla Panna Cotta" data-price="6.50">
+                <img src="images/panna-cotta.jpg" alt="Vanilla Panna Cotta">
+                <h2>Vanilla Panna Cotta</h2>
+                <p>Panna Cotta</p>
+                <span>$6.50</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Your Cart</h2>
+        <ul id="cart-items">
+            <li>No items in cart yet.</li>
+        </ul>
+        <p id="cart-total">Total: $0.00</p>
+        <button id="confirm-order">Confirm Order</button>
+        <button id="start-new-order">Start New Order</button>
+    </footer>
+
+    <!-- Modal for Order Confirmation -->
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close-btn">&times;</span>
+            <h3>Order Confirmation</h3>
+            <p>Your order has been succesfully placed!</p>
+            <button id="close-order-modal">Close</button>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+    
