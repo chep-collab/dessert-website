@@ -1,9 +1,8 @@
 
-### 📝 Refined `README.md` for `dessert-website`
 
 ```markdown
 # 🍩 Dessert Website
-
+https://dessert-website-mu.vercel.app/
 A delightful static website showcasing a variety of desserts, built with **HTML**, **CSS**, and **JavaScript**. This project demonstrates clean layout design, responsive styling, and interactive elements—perfect for practicing frontend fundamentals.
 
 ---
