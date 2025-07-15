@@ -1,6 +1,3 @@
-Sweet choice, Mercy! 🍰 I checked out your `dessert-website` repo—it’s a simple static site built with **HTML**, **CSS**, and **JavaScript**, perfect for showcasing your frontend fundamentals and visual creativity. Let’s whip up a deliciously polished README to match.
-
----
 
 ### 📝 Refined `README.md` for `dessert-website`
 
